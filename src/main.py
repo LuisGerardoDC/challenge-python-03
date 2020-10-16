@@ -1,8 +1,10 @@
 # Resolve the problem!!
-
+import re
 
 def run():
-    # Start coding here
+    with open('encoded.txt','r', encoding='utf-8') as f:
+        txt = f.read()
+        print(re.findall('[a-z]',txt))
 
 
 if __name__ == '__main__':
